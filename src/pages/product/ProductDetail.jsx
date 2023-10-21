@@ -44,17 +44,17 @@ function ProductDetail({ isOpen, setIsOpen }) {
                     placeholder="Enter Bid Amount"
                   />
                 </div>
-                <div className="flex items-center justify-end gap-2">
-                  <button className="text-sm border rounded bg-green-300 p-2">
-                    Place bid
-                  </button>
-                  <button
-                    className="text-sm text-white border rounded bg-red-600 p-2"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Cancel
-                  </button>
-                </div>
+                {/* <div className="flex flex-col items-center justify-end gap-2"> */}
+                <button className="text-sm border rounded bg-green-300 p-2">
+                  Place bid
+                </button>
+                <button
+                  className="text-sm text-white border rounded bg-red-600 p-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Cancel
+                </button>
+                {/* </div> */}
               </form>
             </div>
           </div>

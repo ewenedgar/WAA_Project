@@ -5,16 +5,18 @@ function Navbar() {
     <div className="bg-slate-200 p-5 shadow-md">
       <nav className="z-10 relative max-w-7xl mx-auto">
         <div className="flex items-center justify-between">
-          <h3 className="text-2xl">Auction It.</h3>
+          <Link to="/" className="text-2xl">
+            Auction It.
+          </Link>
           <div className="space-x-16">
             <Link to="/" className="hover:link-hover">
               Home
             </Link>
             <Link to="" className="hover:link-hover">
-              Buy
+              Products
             </Link>
             <Link to="" className="hover:link-hover">
-              Sell
+              Create product
             </Link>
           </div>
           <Link
