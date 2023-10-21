@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn {
+    @apply py-3 px-6 rounded-lg font-semibold;
+  }
+
+  .primary {
+    @apply bg-orange-600;
+  }
+
+  .link-hover {
+    @apply border-b-2 pb-1 border-orange-600 transition-all delay-75 ease-linear;
+  }
+
+  .dark-overlay {
+    @apply bg-black/30 w-full h-full absolute top-0 left-0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,5 +29,6 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Sora", sans-serif;
+  background-color: rgb(246, 246, 246);
 }
