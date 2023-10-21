@@ -20,7 +20,7 @@ function Home() {
             </p>
 
             <button className="hover:scale-110 delay-100 transition-all ease-linear">
-              <Link to="" className="btn primary px-16 p-5">
+              <Link to="/auth/login" className="btn primary px-16 p-5">
                 Log In
               </Link>
             </button>

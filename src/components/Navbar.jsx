@@ -18,7 +18,7 @@ function Navbar() {
             </Link>
           </div>
           <Link
-            to="/login"
+            to="/auth/login"
             className="border rounded-md border-orange-500 px-5 py-2 hover:bg-orange-500 hover:text-white transition-all delay-75 ease-linear"
           >
             Log In

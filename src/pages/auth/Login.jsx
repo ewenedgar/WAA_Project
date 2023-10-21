@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 
-function Index() {
+function Login() {
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("")
   // const [error, setError] = useState(null)
@@ -35,12 +35,12 @@ function Index() {
             </div>
           </div>
           <button className="w-full mt-5 rounded-md border p-2 border-orange-500 hover:bg-orange-500 hover:text-white transition-all delay-75 ease-linear">
-            Submit
+            Log In
           </button>
         </form>
         <p className="text-sm text-gray-400">
           Don&apos;t have an account?{" "}
-          <Link to="/signup" className="underline text-blue-400">
+          <Link to="/auth/signup" className="underline text-blue-400">
             Sign up
           </Link>
         </p>
@@ -49,4 +49,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Login;
