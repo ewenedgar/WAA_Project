@@ -1,11 +1,20 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 
 function Login() {
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("")
-  // const [error, setError] = useState(null)
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    try {
+      console.log(email, password);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <Layout className="min-h-[80vh] grid place-items-center">
@@ -21,6 +30,7 @@ function Login() {
                 type="text"
                 name="email"
                 className="p-2 border rounded-md outline-none"
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="flex flex-col gap-2">
@@ -31,10 +41,14 @@ function Login() {
                 type="text"
                 name="email"
                 className="p-2 border rounded-md outline-none"
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
           </div>
-          <button className="w-full mt-5 rounded-md border p-2 border-orange-500 hover:bg-orange-500 hover:text-white transition-all delay-75 ease-linear">
+          <button
+            onClick={handleSubmit}
+            className="w-full mt-5 rounded-md border p-2 border-orange-500 hover:bg-orange-500 hover:text-white transition-all delay-75 ease-linear"
+          >
             Log In
           </button>
         </form>
